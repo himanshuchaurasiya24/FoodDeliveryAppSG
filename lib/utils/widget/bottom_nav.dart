@@ -4,7 +4,6 @@ import 'package:food_delivery_app_sg/pages/home.dart';
 import 'package:food_delivery_app_sg/pages/order.dart';
 import 'package:food_delivery_app_sg/pages/profile.dart';
 import 'package:food_delivery_app_sg/pages/wallet.dart';
-import 'package:food_delivery_app_sg/utils/constants.dart';
 
 class BottomNav extends StatefulWidget {
   const BottomNav({super.key});
@@ -30,7 +29,6 @@ class _BottomNavState extends State<BottomNav> {
         backgroundColor: Colors.white,
         color: Colors.black,
         buttonBackgroundColor: Colors.black,
-        animationCurve: Curves.bounceIn,
         onTap: (value) {
           setState(() {
             currentIndex = value;
