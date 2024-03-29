@@ -40,6 +40,8 @@ class _HomeState extends State<Home> {
         title: const Text(
           'Hello Himanshu,',
         ),
+        foregroundColor: Colors.transparent,
+        forceMaterialTransparency: true,
         centerTitle: true,
         actions: [
           IconButton(
@@ -61,10 +63,7 @@ class _HomeState extends State<Home> {
         ],
       ),
       body: Padding(
-        padding: EdgeInsets.only(
-          top: defaultGap,
-          left: defaultGap * 2,
-        ),
+        padding: EdgeInsets.all(defaultGap),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -120,7 +119,7 @@ class _HomeState extends State<Home> {
                     foodDetails.length,
                     (index) => Padding(
                       padding: EdgeInsets.only(
-                        right: defaultGap * 1.5,
+                        right: defaultGap,
                       ),
                       child: CustomFoodContainer(
                         foodDetails: foodDetails[index],
@@ -139,7 +138,9 @@ class _HomeState extends State<Home> {
                   defaultGap * 2,
                 ),
                 child: Padding(
-                  padding: EdgeInsets.all(defaultGap),
+                  padding: EdgeInsets.all(
+                    defaultGap,
+                  ),
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,

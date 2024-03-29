@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app_sg/pages/home.dart';
 import 'package:food_delivery_app_sg/utils/constants.dart';
+import 'package:food_delivery_app_sg/utils/widget/bottom_nav.dart';
 
 // vid at 14:19:13 Shivam Gupta
 void main() {
@@ -10,7 +10,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,6 +17,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Ubuntu',
         primaryColor: primaryColor,
+        iconTheme: const IconThemeData(
+          color: Colors.white,
+          size: 30,
+        ),
         textTheme: const TextTheme(
           displayLarge: TextStyle(
             fontSize: 40,
@@ -50,7 +53,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const Home(),
+      home: const BottomNav(),
     );
   }
 }
