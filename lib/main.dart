@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery_app_sg/utils/constants.dart';
 import 'package:food_delivery_app_sg/utils/widget/bottom_nav.dart';
 
-// vid at 14:19:13 Shivam Gupta
+// vid at 14:27:21 Shivam Gupta
 void main() {
   runApp(const MyApp());
 }

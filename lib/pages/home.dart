@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:food_delivery_app_sg/models/food_details.dart';
+import 'package:food_delivery_app_sg/pages/details.dart';
 import 'package:food_delivery_app_sg/utils/constants.dart';
 
 class Home extends StatefulWidget {
@@ -123,7 +124,16 @@ class _HomeState extends State<Home> {
                       ),
                       child: CustomFoodContainer(
                         foodDetails: foodDetails[index],
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) {
+                                return const Details();
+                              },
+                            ),
+                          );
+                        },
                       ),
                     ),
                   ),
